@@ -20,8 +20,8 @@ public class BreakoutGame extends JPanel implements ActionListener, KeyListener 
 
     // --- Paddle ---
     int paddleX = 300;
-    final int PADDLE_Y = 440;
-    final int PADDLE_WIDTH = 100;
+    final int PADDLE_Y = 640;
+    final int PADDLE_WIDTH = 50;
     final int PADDLE_HEIGHT = 12;
     final int PADDLE_SPEED = 8;
     boolean movingLeft = false;
@@ -35,8 +35,8 @@ public class BreakoutGame extends JPanel implements ActionListener, KeyListener 
     final int BALL_SIZE = 14;
 
     // --- Bricks ---
-    final int ROWS = 5;
-    final int COLS = 8;
+    final int ROWS = 6;
+    final int COLS = 9;
     final int BRICK_WIDTH = 65;
     final int BRICK_HEIGHT = 20;
     final int BRICK_GAP = 6;
@@ -48,7 +48,7 @@ public class BreakoutGame extends JPanel implements ActionListener, KeyListener 
     boolean gameOver = false;
     boolean youWin = false;
     int score = 0;
-    int lives = 3;
+    int lives = 2;
 
     public BreakoutGame() {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
